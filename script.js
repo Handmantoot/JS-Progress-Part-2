@@ -70,17 +70,53 @@
 
 //Functions calling functions
 
-function cutFruitPieces(fruit) {
-    return fruit * 4;
+// function cutFruitPieces(fruit) {
+//     return fruit * 4;
+// }
+
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruitPieces(apples);
+//     const orangePieces = cutFruitPieces(oranges);
+
+//     const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges.`
+//     return juice;
+// }
+
+
+// console.log(fruitProcessor(2, 3));
+
+//function review
+
+// const calcAge = function (birthYear) {
+//     return 2037 - birthYear;
+
+// }
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//     const age = calcAge(birthYear)
+//     const retirement = 65 - age;
+//     if (retirement > 0) {
+//         console.log(`${firstName} reitres in ${retirement}`);
+//         return retirement; // Once met, Return will immediately exit function statement. Make sure the Return statement is last
+//     } else {
+//         return -1;
+//     }
+
+//     // return `${firstName} reitres in ${retirement}`
+//     // return retirement;
+// }
+
+// console.log(yearsUntilRetirement(1991, 'Nigel'));
+// console.log(yearsUntilRetirement(1950, 'Mike'));
+
+//coding challenge: Functions
+
+//My Rent calculator
+
+const monthlyRent = 2100
+const neededIncome = 3 * monthlyRent;
+
+function differenceInRent(){
+    
+    return differenceInRent;
 }
-
-function fruitProcessor(apples, oranges) {
-    const applePieces = cutFruitPieces(apples);
-    const orangePieces = cutFruitPieces(oranges);
-
-    const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges.`
-    return juice;
-}
-
-
-console.log(fruitProcessor(2, 3));
+differenceInRent(monthlyRent,neededIncome);
