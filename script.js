@@ -108,15 +108,91 @@
 // console.log(yearsUntilRetirement(1991, 'Nigel'));
 // console.log(yearsUntilRetirement(1950, 'Mike'));
 
-//coding challenge: Functions
+//coding challenge: Functions will do later
+
+
+
 
 //My Rent calculator
 
-const monthlyRent = 2100
-const neededIncome = 3 * monthlyRent;
+// const monthlyRent = 2100;
+// const beforeTaxes = 4600;
+// const neededIncome = 3 * monthlyRent;
+// const differenceInIncome = neededIncome - beforeTaxes;
 
-function differenceInRent(){
-    
-    return differenceInRent;
+// if (beforeTaxes < neededIncome) {
+//     console.log(`You need to make ${differenceInIncome}`);
+// } else {
+//     console.log("You make 3 times the rent and will be approved unless your credit is ASS.");
+// }
+
+
+//Yearly income Function practice
+
+
+// const nigelsyearly = 4600 * 12;
+// const ericsYearly = 2200 * 12;
+// const yearlyIncomeCombined = nigelsyearly + ericsYearly;
+// console.log(yearlyIncomeCombined);
+
+//arrays
+
+// const friendNames = ["Bob", "phil", "Jack"]; //how to make an array
+// // console.log(friendNames);
+
+// // const years = new Array(1991, 1992, 1993, 1994, 2020);
+// // console.log(years);
+
+
+// console.log(friendNames[friendNames.length - 1]);
+// console.log(friendNames.length);
+
+// friendNames[2] = 'Jay'; //data manipulation. Changes Jack to Jay
+// console.log(friendNames)
+
+// const firstName = "Nigel"
+// const nigel = [firstName, 'Boles', 2021 - 1992, 'EDI Developer', friendNames];
+// console.log(nigel.length)
+
+// Excercisae
+// const calcAge2 = function (birthYear) {
+//     return 2037 - birthYear;
+// }
+// const years = [1990, 1967, 2002, 2010, 2018];
+
+// // years[0] = 1991;
+
+// const age1 = calcAge2(years[years.length - 5]); // Good for changing the numbers in the years array
+// const age2 = calcAge2(years[years.length - 4]);
+// const age3 = calcAge2(years[years.length - 1]);
+// console.log(age1, age2, age3);
+
+// const ages = [calcAge2(years[years.length - 5]), calcAge2(years[years.length - 4]), calcAge2(years[years.length - 1])]
+// console.log(ages)
+
+const friendNames = ["Bob", "phil", "Jack"];
+const newLength = friendNames.push("Jay");
+console.log(friendNames);
+console.log(newLength);
+
+friendNames.unshift("John");
+console.log(friendNames)
+
+//removes elements
+friendNames.pop() // removes last. This case is Jay
+const popped = friendNames.pop() //removes Jack
+console.log(popped)
+console.log(friendNames)
+
+friendNames.shift() // removes first element in array - This case John
+console.log(friendNames)
+
+
+console.log(friendNames.indexOf('phil'));
+console.log(friendNames.includes('phil'));
+
+console.log(friendNames.includes('Morris'));
+
+if (friendNames.includes("phil")) {
+    console.log("You have a friend named phil...Why?")
 }
-differenceInRent(monthlyRent,neededIncome);
