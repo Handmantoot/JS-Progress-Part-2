@@ -170,29 +170,46 @@
 // const ages = [calcAge2(years[years.length - 5]), calcAge2(years[years.length - 4]), calcAge2(years[years.length - 1])]
 // console.log(ages)
 
-const friendNames = ["Bob", "phil", "Jack"];
-const newLength = friendNames.push("Jay");
-console.log(friendNames);
-console.log(newLength);
+// const friendNames = ["Bob", "phil", "Jack"];
+// const newLength = friendNames.push("Jay");
+// console.log(friendNames);
+// console.log(newLength);
 
-friendNames.unshift("John");
-console.log(friendNames)
+// friendNames.unshift("John");
+// console.log(friendNames)
 
-//removes elements
-friendNames.pop() // removes last. This case is Jay
-const popped = friendNames.pop() //removes Jack
-console.log(popped)
-console.log(friendNames)
+// //removes elements
+// friendNames.pop() // removes last. This case is Jay
+// const popped = friendNames.pop() //removes Jack
+// console.log(popped)
+// console.log(friendNames)
 
-friendNames.shift() // removes first element in array - This case John
-console.log(friendNames)
+// friendNames.shift() // removes first element in array - This case John
+// console.log(friendNames)
 
 
-console.log(friendNames.indexOf('phil'));
-console.log(friendNames.includes('phil'));
+// console.log(friendNames.indexOf('phil'));
+// console.log(friendNames.includes('phil'));
 
-console.log(friendNames.includes('Morris'));
+// console.log(friendNames.includes('Morris'));
 
-if (friendNames.includes("phil")) {
-    console.log("You have a friend named phil...Why?")
+// if (friendNames.includes("phil")) {
+//     console.log("You have a friend named phil...Why?")
+// }
+
+//coding challenge arrays
+
+const calcTip = function (bill) {
+    return bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 }
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+
+console.log(bills, tips);
+
+const total = [bills[0] + tips[0] + bills[1] + tips[1] + bills[2] + tips[2]];
+console.log(total)
+
+//arrow function refresher 
+// const calcTip = bill => bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
