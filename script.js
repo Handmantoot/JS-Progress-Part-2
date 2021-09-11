@@ -1,4 +1,4 @@
-'use strict'; // Strict mode is usefull. :) I like it. 
+// 'use strict'; // Strict mode is usefull. :) I like it. 
 
 // let hasDriversLicense = false; //'let' lets you change variable
 // const passTest = true;
@@ -214,23 +214,88 @@
 //arrow function refresher 
 // const calcTip = bill => bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 
-const nigel2 = {
-    firstName: "Nigel",
-    lastName: "Boles",
-    birthYear: 1992,
-    job: "EDI Developer",
-    friends: ["Shuan", "Adam", "Dan", "Eric", "Paul"],
-    hasDriversLicense: true,
-    // calcAge: function (birthYear) {
-    //     return 2037 - birthYear;
-    // }
+// const nigel2 = {
+//     firstName: "Nigel",
+//     lastName: "Boles",
+//     birthYear: 1992,
+//     job: "EDI Developer",
+//     friends: ["Shuan", "Adam", "Dan", "Eric", "Paul"],
+//     hasDriversLicense: false,
+//     calcAge: function (birthYear) {
+//     return 2037 - birthYe }
 
-    calcAge: function () {
-        console.log(this)
-        return 2037 - this.birthYear; //Use of 'this' lets you bypass hard coding values. 'this' will just refer to the object it's currently nested in.
-    }
-};
+//     // calcAge: function () {
+//     //     console.log(this)
+//     //     return 2037 - this.birthYear; //Use of 'this' lets you bypass hard coding values. 'this' will just refer to the object it's currently nested in.
+//     // }
 
-console.log(nigel2.calcAge());
+//     calcAge: function () {
+//         this.age = 2037 - this.birthYear; //'this' refers to nigel2 object
+//         return this.age;
+//     },
+//     getsummary: function () {
+//         return `${this.firstName} is a ${this.calcAge()}-year old ${nigel2.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`
+//     }
+// };
+
+// console.log(nigel2.getsummary())
+// console.log(nigel2.calcAge());
+// console.log(nigel2.age);
+// console.log(nigel2.age);
+// console.log(nigel2.age);
 
 // console.log(nigel['calcAge'](1992)); //calcAge needs to be a string
+
+//coding challenge
+
+// if (nigel2.hasDriversLicense) {
+//     console.log(`${ nigel2.firstName } is a ${ nigel2.birthYear } year old ${ nigel2.job } and he has a drivers License`);
+// } else {
+//     console.log(`${ nigel2.firstName } is a ${ nigel2.birthYear } year old ${ nigel2.job } and he does not have a drivers License`);
+// };
+
+//coding challenge
+
+//create an object with data. See nigel2 for ref
+
+// getSummary: function() {
+//     if (markMiller.calcMarkBMI >= johnSmith.calcJohnBMI) {
+//         console.log("Mark is fatter than John")
+//     } else {
+//         console.log("John is fatter than Mark")
+//     }
+//     return
+// }
+
+const markMiller = {
+    firstName: "Mark",
+    lastName: "Miller",
+    markWeight: 78,
+    markHeight: 1.69,
+    calcMarkBMI: function () {
+        return this.markWeight / this.markHeight ** 2
+    }
+}
+
+const johnSmith = {
+    firstName: "John",
+    lastName: "Smith",
+    johnWeight: 92,
+    johnHeight: 1.95,
+    calcJohnBMI: function () {
+        return this.johnWeight / this.johnHeight ** 2
+    }
+}
+
+getSummary = function () {
+    if (markMiller.calcMarkBMI >= johnSmith.calcJohnBMI) {
+        console.log(`Mark's BMI is ${markMiller.calcMarkBMI()} is fatter than John`)
+    } else {
+        console.log(`John's BMI is ${johnSmith.calcJohnBMI()} fatter than Mark`)
+    }
+    return
+}
+console.log(markMiller.calcMarkBMI())
+console.log(johnSmith.calcJohnBMI())
+
+getSummary()
