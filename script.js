@@ -199,17 +199,38 @@
 
 //coding challenge arrays
 
-const calcTip = function (bill) {
-    return bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
-}
+// const calcTip = function (bill) {
+//     return bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+// }
 
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
 
-console.log(bills, tips);
+// console.log(bills, tips);
 
-const total = [bills[0] + tips[0] + bills[1] + tips[1] + bills[2] + tips[2]];
-console.log(total)
+// const total = [bills[0] + tips[0] + bills[1] + tips[1] + bills[2] + tips[2]];
+// console.log(total)
 
 //arrow function refresher 
 // const calcTip = bill => bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+
+const nigel2 = {
+    firstName: "Nigel",
+    lastName: "Boles",
+    birthYear: 1992,
+    job: "EDI Developer",
+    friends: ["Shuan", "Adam", "Dan", "Eric", "Paul"],
+    hasDriversLicense: true,
+    // calcAge: function (birthYear) {
+    //     return 2037 - birthYear;
+    // }
+
+    calcAge: function () {
+        console.log(this)
+        return 2037 - this.birthYear; //Use of 'this' lets you bypass hard coding values. 'this' will just refer to the object it's currently nested in.
+    }
+};
+
+console.log(nigel2.calcAge());
+
+// console.log(nigel['calcAge'](1992)); //calcAge needs to be a string
